@@ -8,22 +8,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
 <div class="header">
   <div class="color-block color-block--light-rose"></div>
-  <div class="header-photo"></div>
-  <div class="menu">
+  <div class="header-content">
+    <div class="header-photo"></div>
+    <div class="header-description-block">
+      <h1 class="header-name">Alina Neshchebnaya</h1>
+      <p class="header-description">Enthusiastic and proactive Software Engineer. Proficient both in BackEnd and
+        FrontEnd
+        Development. Experience in Java Core, Web development, SCRUM methodology and QA processes. Have good command of
+        English.</p>
+    </div>
+  </div>
+  <div class="menu hidden" id="menu">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#tech-section">Technical Knowledge</a></li>
-        <li><a href="#tech-section">Technical Knowledge</a></li>
-        <li><a href="#experience-section">Experience</a></li>
-        <li><a href="#education-section">Education</a></li>
-        <li><a href="#contact-section">Contact me</a></li>
+        <li class="menu-element"><a class="menu-link" href="#">Home</a></li>
+        <li class="menu-element"><a class="menu-link" href="#portfolio-section">Portfolio</a></li>
+        <li class="menu-element"><a class="menu-link" href="#tech-section">Technical Knowledge</a></li>
+        <li class="menu-element"><a class="menu-link" href="#experience-section">Experience</a></li>
+        <li class="menu-element"><a class="menu-link" href="#education-section">Education</a></li>
+        <li class="menu-element menu-element--contact"><a class="menu-link" href="#contact-section">Contact me</a></li>
       </ul>
     </nav>
   </div>
+  <div class="menu-toggle" onclick="toggleClick(this)">
+    <div class="menu-toggle-line1"></div>
+    <div class="menu-toggle-line2"></div>
+    <div class="menu-toggle-line3"></div>
+  </div>
 </div>
+
+<div class="portfolio-section" id="portfolio-section"></div>
 <div class="tech-section" id="tech-section"></div>
 <div class="experience-section" id="experience-section">
   <div class="color-block color-block--bright-rose"></div>
@@ -33,5 +50,7 @@
   <div class="color-block color-block--light-rose"></div>
 </div>
 <div class="footer"></div>
+
+<script src="./js/menu-toggle.js"></script>
 </body>
 </html>
