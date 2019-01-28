@@ -51,23 +51,42 @@ getscreenshotsBE();
 
 function getscreenshotsFE() {
   let portfolioElem = document.getElementsByClassName("portfolio--fe")[0];
-
-  for (let i = 0; i < screenshotsFE.length; i++) {
-    let element = document.createElement('div');
-    element.setAttribute('class', 'portfolio-item');
-    element.style.backgroundImage = 'url(\"../img/' + screenshotsFE[i]['file'] + '\")';
-
-    portfolioElem.appendChild(element);
-  }
+  createPortfolioItem(portfolioElem, screenshotsFE);
 }
 
 function getscreenshotsBE() {
   let portfolioElem = document.getElementsByClassName("portfolio--be")[0];
+  createPortfolioItem(portfolioElem, screenshotsBE);
+}
 
-  for (let i = 0; i < screenshotsBE.length; i++) {
+function createPortfolioItem(portfolioElem, screenshots) {
+  for (let i = 0; i < screenshots.length; i++) {
     let element = document.createElement('div');
     element.setAttribute('class', 'portfolio-item');
-    element.style.backgroundImage = 'url(\"../img/' + screenshotsBE[i]['file'] + '\")';
+    element.style.backgroundImage = 'url(\"../img/' + screenshots[i]['file'] + '\")';
+
+    let overlayElem = document.createElement("a");
+    overlayElem.setAttribute('class', 'portfolio-item-overlay');
+    overlayElem.setAttribute('href', screenshots[i]['link']);
+    overlayElem.setAttribute('target', '_blank');
+
+    let overlayNameElem = document.createElement("div");
+    overlayNameElem.setAttribute('class', 'portfolio-item-overlay-pname');
+    overlayNameElem.innerText = screenshots[i]['name'];
+
+    let overlayTechElem = document.createElement("div");
+    overlayTechElem.setAttribute('class', 'portfolio-item-overlay-tech');
+    overlayTechElem.innerText = screenshots[i]['tech'];
+
+    let overlayDateElem = document.createElement("div");
+    overlayDateElem.setAttribute('class', 'portfolio-item-overlay-date');
+    overlayDateElem.innerText = screenshots[i]['date'];
+
+    overlayElem.appendChild(overlayNameElem);
+    overlayElem.appendChild(overlayTechElem);
+    overlayElem.appendChild(overlayDateElem);
+
+    element.appendChild(overlayElem);
 
     portfolioElem.appendChild(element);
   }

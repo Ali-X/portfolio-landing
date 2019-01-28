@@ -14,7 +14,7 @@
 
 .portfolio-subsection-header {
   display: block;
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
   color: $smoky-black-color;
   font-size: 3rem;
@@ -30,10 +30,15 @@
 .portfolio-item {
   display: inline-block;
   margin: 2rem;
+  padding: 2rem;
   width: 30rem;
   height: 35rem;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  border: 7px double $light-carmine-pink-color;
+  border-spacing: 15px;
   cursor: pointer;
 }
 

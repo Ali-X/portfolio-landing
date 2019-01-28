@@ -201,7 +201,7 @@ ul {
 
 .portfolio-subsection-header {
   display: block;
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
   color: #131200;
   font-size: 3rem;
@@ -224,11 +224,17 @@ ul {
 .portfolio-item {
   display: inline-block;
   margin: 2rem;
+  padding: 2rem;
   width: 30rem;
   height: 35rem;
   background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  border: 7px double #dc6a73;
+  border-spacing: 15px;
   cursor: pointer;
 }
 
