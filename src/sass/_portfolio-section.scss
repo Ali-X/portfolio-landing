@@ -38,13 +38,13 @@
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
-  border: 3px solid rgba(19, 18, 0, 0.8);
+  border: 3px solid $smoky-black-transparent-color;
   box-shadow: 20px -20px 0 $light-carmine-pink-color;
   overflow: hidden;
   cursor: pointer;
 
   &:hover > .portfolio-item-overlay {
-    background-color: rgba(19, 18, 0, 0.8);
+    background-color: $smoky-black-transparent-color;
     transform: translateY(0);
   }
 }

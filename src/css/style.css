@@ -234,7 +234,7 @@ ul {
   -webkit-background-origin: content-box;
   background-origin: content-box;
   background-repeat: no-repeat;
-  border: 7px double #131200;
+  border: 3px solid rgba(19, 18, 0, 0.8);
   -webkit-box-shadow: 20px -20px 0 #dc6a73;
   box-shadow: 20px -20px 0 #dc6a73;
   overflow: hidden;
