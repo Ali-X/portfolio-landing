@@ -23,9 +23,9 @@ gulp.task("sass", function() {
 gulp.task('watch', ["sass", "browser"], function () {
   gulp.watch('src/sass/*.scss', ['sass']);
   gulp.watch('src/*/*.*', ['build']);
-  gulp.watch('src/js/*.js', browserSync.reload);
-  gulp.watch("src/html/*.html", browserSync.reload);
-  gulp.watch("src/css/main.css", browserSync.reload);
+  gulp.watch('src/*', ['build']);
+  gulp.watch('src/*/*.*', browserSync.reload);
+  gulp.watch('src/*', browserSync.reload);
 });
 
 gulp.task("browser", function() {
