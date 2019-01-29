@@ -54,8 +54,6 @@
       respUlElem.appendChild(liElem);
     }
 
-    respElem.appendChild(respUlElem);
-
     let techElem = document.createElement('div');
     techElem.setAttribute('class', 'experience-section-card-header');
     techElem.innerText = 'Technology stack';
@@ -69,8 +67,6 @@
 
       techUlElem.appendChild(liElem);
     }
-
-    techElem.appendChild(techUlElem);
 
     let achElem = document.createElement('div');
     achElem.setAttribute('class', 'experience-section-card-header');
@@ -86,11 +82,12 @@
       achUlElem.appendChild(liElem);
     }
 
-    achElem.appendChild(achUlElem);
-
     subcardWhiteElem.appendChild(respElem);
+    subcardWhiteElem.appendChild(respUlElem);
     subcardWhiteElem.appendChild(techElem);
+    subcardWhiteElem.appendChild(techUlElem);
     subcardWhiteElem.appendChild(achElem);
+    subcardWhiteElem.appendChild(achUlElem);
 
     cardElem.appendChild(subcardRoseElem);
     cardElem.appendChild(subcardWhiteElem);
