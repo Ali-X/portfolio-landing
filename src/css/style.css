@@ -35,6 +35,10 @@ ul {
   font-weight: bold;
 }
 
+.title--white {
+  color: #FFFFFF;
+}
+
 .color-block {
   position: absolute;
   top: 0;
@@ -50,6 +54,10 @@ ul {
 
 .color-block--bright-rose {
   background-color: #b6465f;
+}
+
+.color-block--left {
+  right: unset;
 }
 
 .header {
@@ -362,4 +370,11 @@ ul {
 .experience-section-card-item {
   line-height: 2.5rem;
   font-size: 1.5rem;
+}
+
+.tech-section {
+  position: relative;
+  margin: 11rem 0;
+  padding: 10rem 0;
+  height: 85rem;
 }

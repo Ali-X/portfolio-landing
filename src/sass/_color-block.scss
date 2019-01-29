@@ -13,4 +13,8 @@
   &--bright-rose {
     background-color: $raspberry-rose-color;
   }
+
+  &--left {
+    right: unset;
+  }
 }
