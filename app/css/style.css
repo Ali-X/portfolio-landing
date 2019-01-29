@@ -300,3 +300,28 @@ ul {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+.experience-section-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.experience-section-subcard {
+  width: 40%;
+}
+
+.experience-section-subcard--rose {
+  background-color: #dc6a73;
+}
+
+.experience-section-subcard--white {
+  background-color: #FFFFFF;
+}

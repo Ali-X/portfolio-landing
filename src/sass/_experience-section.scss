@@ -1,0 +1,18 @@
+.experience-section-card {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.experience-section-subcard {
+  width: 40%;
+
+  &--rose {
+    background-color: $light-carmine-pink-color;
+  }
+
+  &--white {
+    background-color: $white-color;
+  }
+}
