@@ -18,6 +18,29 @@
     let cardElem = document.createElement('div');
     cardElem.setAttribute('class', 'experience-section-card');
 
+    let subcardRoseElem = createRoseBlock(exp);
+    let subcardWhiteElem = createWhiteBlock(exp);
+
+    cardElem.appendChild(subcardRoseElem);
+    cardElem.appendChild(subcardWhiteElem);
+
+    parrentElem.appendChild(cardElem);
+  }
+
+  function createList(arr) {
+    let ulElem = document.createElement('ul');
+
+    for (let j = 0; j < arr.length; j++) {
+      let liElem = document.createElement('li');
+      liElem.setAttribute('class', 'experience-section-card-item');
+      liElem.innerText = arr[j];
+
+      ulElem.appendChild(liElem);
+    }
+    return ulElem;
+  }
+
+  function createRoseBlock(exp) {
     let subcardRoseElem = document.createElement('div');
     subcardRoseElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--rose');
 
@@ -37,6 +60,10 @@
     subcardRoseElem.appendChild(placeElem);
     subcardRoseElem.appendChild(dateElem);
 
+    return subcardRoseElem;
+  }
+
+  function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
     subcardWhiteElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--white');
 
@@ -44,43 +71,19 @@
     respElem.setAttribute('class', 'experience-section-card-header');
     respElem.innerText = 'Responsibilities';
 
-    let respUlElem = document.createElement('ul');
-
-    for (let j = 0; j < exp['responsibilities'].length; j++) {
-      let liElem = document.createElement('li');
-      liElem.setAttribute('class', 'experience-section-card-item');
-      liElem.innerText = exp['responsibilities'][j];
-
-      respUlElem.appendChild(liElem);
-    }
+    let respUlElem = createList(exp['responsibilities']);
 
     let techElem = document.createElement('div');
     techElem.setAttribute('class', 'experience-section-card-header');
     techElem.innerText = 'Technology stack';
 
-    let techUlElem = document.createElement('ul');
-
-    for (let j = 0; j < exp['tech'].length; j++) {
-      let liElem = document.createElement('li');
-      liElem.setAttribute('class', 'experience-section-card-item');
-      liElem.innerText = exp['tech'][j];
-
-      techUlElem.appendChild(liElem);
-    }
+    let techUlElem = createList(exp['tech']);
 
     let achElem = document.createElement('div');
     achElem.setAttribute('class', 'experience-section-card-header');
     achElem.innerText = 'Achievements';
 
-    let achUlElem = document.createElement('ul');
-
-    for (let j = 0; j < exp['achievements'].length; j++) {
-      let liElem = document.createElement('li');
-      liElem.setAttribute('class', 'experience-section-card-item');
-      liElem.innerText = exp['achievements'][j];
-
-      achUlElem.appendChild(liElem);
-    }
+    let achUlElem = createList(exp['achievements']);
 
     subcardWhiteElem.appendChild(respElem);
     subcardWhiteElem.appendChild(respUlElem);
@@ -89,10 +92,8 @@
     subcardWhiteElem.appendChild(achElem);
     subcardWhiteElem.appendChild(achUlElem);
 
-    cardElem.appendChild(subcardRoseElem);
-    cardElem.appendChild(subcardWhiteElem);
-
-    parrentElem.appendChild(cardElem);
+    return subcardWhiteElem;
   }
+
 })();
 
