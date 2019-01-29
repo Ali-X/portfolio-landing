@@ -310,18 +310,43 @@ ul {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: auto;
-  width: 80%;
+  margin: 5rem auto;
+  width: 60%;
+  -webkit-box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
+  box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
 }
 
 .experience-section-subcard {
-  width: 40%;
+  padding: 4rem;
 }
 
 .experience-section-subcard--rose {
+  position: relative;
+  width: 20%;
+  color: #FFFFFF;
+  text-align: right;
   background-color: #dc6a73;
 }
 
 .experience-section-subcard--white {
+  width: 80%;
   background-color: #FFFFFF;
+}
+
+.experience-section-card-position {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.experience-section-card-place {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.experience-section-card-date {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 1.5rem;
+  font-style: italic;
 }
