@@ -1,10 +1,6 @@
 .color-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 75%;
-  height: inherit;
-  z-index: -1;
+  width: 100%;
+  padding: 18.5rem 0;
 
   &--light-rose {
     background-color: $light-carmine-pink-color;

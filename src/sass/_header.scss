@@ -1,21 +1,18 @@
 .header {
-  position: relative;
   display: block;
-  padding: 18.5rem 0 0 30.3rem;
+  padding-left: 30%;
   width: 100%;
-  height: 85rem;
 }
 
 .header-content {
   display: inline-block;
-  margin: auto;
-  height: 40rem;
+  margin-left: -15%;
 }
 
 .header-photo {
   display: inline-block;
   width: 38.5rem;
-  height: inherit;
+  height: 40rem;
   background-image: url("../img/photo.jpg");
   background-size: cover;
 }
