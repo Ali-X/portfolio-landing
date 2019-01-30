@@ -63,7 +63,7 @@ function createPortfolioItem(portfolioElem, screenshots) {
   for (let i = 0; i < screenshots.length; i++) {
     let element = document.createElement('div');
     element.setAttribute('class', 'portfolio-item');
-    element.style.backgroundImage = 'url(\"../img/' + screenshots[i]['file'] + '\")';
+    element.style.backgroundImage = 'url(\"img/' + screenshots[i]['file'] + '\")';
 
     let overlayElem = document.createElement("a");
     overlayElem.setAttribute('class', 'portfolio-item-overlay');
