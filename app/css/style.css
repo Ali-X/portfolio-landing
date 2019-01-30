@@ -366,8 +366,30 @@ ul {
 }
 
 .tech-section {
-  position: relative;
-  margin: 11rem 0;
-  padding: 10rem 0;
-  height: 85rem;
+  display: block;
+  padding: 11rem 30% 11rem 0;
+  width: 100%;
+}
+
+.tech-section-content {
+  margin-left: 25%;
+  margin-right: -25%;
+  padding: 8rem 20%;
+  background-color: #FFFFFF;
+  border: 3px solid rgba(19, 18, 0, 0.8);
+}
+
+.tech-section-title {
+  color: #131200;
+}
+
+.tech-section-items {
+  margin: 5rem 0;
+  font-family: "Merriweather", serif;
+  color: #131200;
+}
+
+.tech-section-item {
+  font-size: 1.6rem;
+  margin: 1.6rem 0;
 }
