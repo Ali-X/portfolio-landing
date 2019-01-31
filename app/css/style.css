@@ -438,3 +438,75 @@ ul {
   font-size: 1.5rem;
   padding-bottom: 8rem;
 }
+
+.contact-section-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 60%;
+  font-family: "Merriweather", serif;
+}
+
+.contact-subsection {
+  margin: 0 2rem;
+  color: #FFFFFF;
+}
+
+.contact-subsection--left {
+  text-align: right;
+}
+
+.contact-subsection--left:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-transform: translateY(-80%) translateX(2rem);
+  -ms-transform: translateY(-80%) translateX(2rem);
+  transform: translateY(-80%) translateX(2rem);
+}
+
+.contact-section-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.contact-section-phone {
+  padding-top: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.contact-section-phone:hover {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+.fa {
+  padding: 0.5rem;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.6s, color 0.3s;
+  -o-transition: background-color 0.6s, color 0.3s;
+  transition: background-color 0.6s, color 0.3s;
+}
+
+.fa:hover {
+  background: white;
+  color: #dc6a73;
+}

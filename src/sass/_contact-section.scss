@@ -1,0 +1,58 @@
+.contact-section {
+
+}
+
+.contact-section-inner {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 60%;
+  font-family: $font-family;
+}
+
+.contact-subsection {
+  margin: 0 2rem;
+  color: $white-color;
+
+  &--left {
+    text-align: right;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 100%;
+      background-color: $white-color;
+      transform: translateY(-80%) translateX(2rem);
+    }
+  }
+}
+
+.contact-section-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.contact-section-phone {
+  padding-top: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: transform 0.6s;
+
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+
+.fa {
+  padding: 0.5rem;
+  font-size: 2.4rem;
+  color: $white-color;
+  border-radius: 50%;
+  transition: background-color 0.6s, color 0.3s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+    color: $light-carmine-pink-color;
+  }
+}
