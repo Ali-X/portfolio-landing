@@ -41,3 +41,53 @@
   line-height: 3rem;
   font-family: $font-family;
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+  }
+
+  .header-content {
+    display: block;
+  }
+
+  .color-block {
+    padding: 5rem 0;
+    width: 100%;
+  }
+
+  .header-photo {
+    margin: auto;
+    display: block;
+    height: 18.5rem;
+  }
+
+  .header-description-block {
+    margin: auto;
+    display: block;
+  }
+
+  .header-photo, .header-description-block {
+    width: 20rem;
+  }
+
+  .header-name {
+    font-size: 2rem;
+  }
+
+  .header-description {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    visibility: hidden;
+  }
+
+  .menu {
+    display: block;
+    position: unset;
+    visibility: visible;
+    margin: 0;
+    width: 100%;
+  }
+}
