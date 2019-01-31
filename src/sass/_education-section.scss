@@ -1,0 +1,33 @@
+.education-section {
+  padding: 0 25rem;
+}
+
+.education-subsection {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.education-section-card {
+  position: relative;
+  margin: 2rem;
+  width: 25%;
+  flex-flow: column;
+}
+
+.education-section-subcard {
+  width: 100%;
+  height: 50%;
+}
+
+.education-section-card-type {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 25%;
+}
+
+.education-section-card-place {
+  font-size: 1.5rem;
+  padding-bottom: 8rem;
+}
