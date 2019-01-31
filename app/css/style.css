@@ -8,7 +8,7 @@
 }
 
 html {
-  min-width: 360px;
+  min-width: 1200px;
   scroll-behavior: smooth;
 }
 
@@ -421,6 +421,10 @@ ul {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .education-section-subcard {
@@ -437,6 +441,12 @@ ul {
 .education-section-card-place {
   font-size: 1.5rem;
   padding-bottom: 8rem;
+}
+
+@media only screen and (max-width: 1290px) {
+  .education-section-card {
+    width: 30rem;
+  }
 }
 
 .contact-section-inner {

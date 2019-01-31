@@ -54,7 +54,7 @@
 
   function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
-    subcardWhiteElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--white');
+    subcardWhiteElem.setAttribute('class', 'education-section-subcard experience-section-subcard experience-section-subcard--white');
 
     let placeElem = document.createElement('div');
     placeElem.setAttribute('class', 'education-section-card-place');
