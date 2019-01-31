@@ -510,3 +510,13 @@ ul {
   background: white;
   color: #dc6a73;
 }
+
+.footer {
+  height: 5rem;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-family: "Merriweather", serif;
+  color: rgba(19, 18, 0, 0.8);
+}
