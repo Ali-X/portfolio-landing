@@ -188,6 +188,8 @@ ul {
   background-image: url("../img/photo.jpg");
   -webkit-background-size: cover;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
 }
 
 .header-description-block {
@@ -349,6 +351,16 @@ ul {
   .portfolio-section {
     padding: 0;
   }
+  .portfolio-item {
+    width: 20rem;
+    height: 20rem;
+  }
+  .portfolio-item-overlay {
+    padding: 0;
+  }
+  .portfolio-item-overlay-pname {
+    font-size: 1.7rem;
+  }
 }
 
 .experience-section-card {
@@ -421,6 +433,7 @@ ul {
     -webkit-flex-flow: column;
     -ms-flex-flow: column;
     flex-flow: column;
+    width: 90%;
   }
   .experience-section-subcard--rose, .experience-section-subcard--white {
     width: 100%;
