@@ -543,6 +543,9 @@ ul {
   .education-section {
     padding: 4rem 0;
   }
+  .education-section-card-place {
+    padding-bottom: 3rem;
+  }
 }
 
 .contact-section-inner {
@@ -625,6 +628,7 @@ ul {
     -ms-flex-flow: column;
     flex-flow: column;
     text-align: center;
+    width: 100%;
   }
   .contact-subsection--left {
     text-align: center;
