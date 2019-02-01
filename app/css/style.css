@@ -139,7 +139,7 @@ ul {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .menu-toggle {
     visibility: hidden;
   }
@@ -217,7 +217,7 @@ ul {
   font-family: "Merriweather", serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .header {
     padding: 0;
   }
@@ -347,7 +347,7 @@ ul {
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 849px) {
   .portfolio-section {
     padding: 0;
   }
@@ -426,7 +426,7 @@ ul {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .experience-section-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -539,7 +539,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1180px) {
   .education-section {
     padding: 4rem 0;
   }
@@ -620,7 +620,7 @@ ul {
   color: #dc6a73;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .contact-section-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
