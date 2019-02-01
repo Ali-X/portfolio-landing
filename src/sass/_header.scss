@@ -47,6 +47,10 @@
     padding: 0;
   }
 
+  .header-name {
+    font-size: 3rem;
+  }
+
   .header-content {
     display: block;
     margin: 0;
@@ -74,5 +78,9 @@
     margin: 0;
     width: 100%;
     text-align: center;
+  }
+
+  .portfolio-section {
+    padding: 0;
   }
 }
