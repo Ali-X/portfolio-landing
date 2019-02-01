@@ -38,3 +38,9 @@
     width: 30rem;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .education-section {
+    padding: 4rem 0;
+  }
+}

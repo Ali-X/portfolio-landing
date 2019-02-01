@@ -56,3 +56,20 @@
     color: $light-carmine-pink-color;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-section-inner {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .contact-subsection--left {
+    text-align: center;
+
+    &:after {
+      width: 100%;
+      height: 1px;
+      transform: unset;
+    }
+  }
+}

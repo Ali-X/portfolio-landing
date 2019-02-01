@@ -21,7 +21,22 @@
   font-family: $font-family;
   color: $smoky-black-color;
 }
+
 .tech-section-item {
   font-size: 1.6rem;
   margin: 1.6rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-section {
+    padding: 0;
+  }
+
+  .tech-section-title {
+    font-size: 2rem;
+  }
+
+  .tech-section-content {
+    margin: 0;
+  }
 }
