@@ -201,28 +201,16 @@ ul {
   }
   .header-content {
     display: block;
+    margin: 0;
   }
   .color-block {
     padding: 5rem 0;
     width: 100%;
   }
-  .header-photo {
-    margin: auto;
-    display: block;
-    height: 18.5rem;
-  }
-  .header-description-block {
-    margin: auto;
-    display: block;
-  }
   .header-photo, .header-description-block {
-    width: 20rem;
-  }
-  .header-name {
-    font-size: 2rem;
-  }
-  .header-description {
-    font-size: 1.5rem;
+    margin: auto;
+    display: block;
+    width: 80%;
   }
   .menu-toggle {
     visibility: hidden;
@@ -233,6 +221,7 @@ ul {
     visibility: visible;
     margin: 0;
     width: 100%;
+    text-align: center;
   }
 }
 
