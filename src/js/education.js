@@ -41,7 +41,7 @@
 
   function createRoseBlock(exp) {
     let subcardRoseElem = document.createElement('div');
-    subcardRoseElem.setAttribute('class', 'education-section-subcard experience-section-subcard experience-section-subcard--rose');
+    subcardRoseElem.setAttribute('class', 'education-section-subcard education-section-subcard--rose experience-section-subcard experience-section-subcard--rose');
 
     let typeElem = document.createElement('div');
     typeElem.setAttribute('class', 'education-section-card-type');
@@ -54,7 +54,7 @@
 
   function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
-    subcardWhiteElem.setAttribute('class', 'education-section-subcard experience-section-subcard experience-section-subcard--white');
+    subcardWhiteElem.setAttribute('class', 'education-section-subcard education-section-subcard--white experience-section-subcard experience-section-subcard--white');
 
     let placeElem = document.createElement('div');
     placeElem.setAttribute('class', 'education-section-card-place');

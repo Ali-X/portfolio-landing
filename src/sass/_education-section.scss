@@ -12,18 +12,27 @@
 .education-section-card {
   position: relative;
   margin: 2rem;
-  width: 35rem;
+  width: 30rem;
   flex-flow: column;
   justify-content: flex-start;
 }
 
 .education-section-subcard {
+  padding: 2rem;
   width: 100%;
-  height: 50%;
+  //height: 50%;
+
+  &--rose {
+    height: 40%;
+  }
+
+  &--white {
+    height: 60%;
+  }
 }
 
 .education-section-card-type {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   padding-left: 25%;
 }

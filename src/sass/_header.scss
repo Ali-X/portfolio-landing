@@ -11,8 +11,8 @@
 
 .header-photo {
   display: inline-block;
-  width: 38.5rem;
-  height: 40rem;
+  width: 33.5rem;
+  height: 35rem;
   background-image: url("../img/photo.jpg");
   background-size: cover;
   background-position-x: center;
@@ -31,7 +31,7 @@
 .header-name {
   padding: 1rem 0;
   color: $white-color;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: $font-family;
   font-weight: bold;
 }
@@ -39,7 +39,7 @@
 .header-description {
   padding: 1rem 0;
   color: $white-color;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 3rem;
   font-family: $font-family;
 }
