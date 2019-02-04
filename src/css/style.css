@@ -141,7 +141,7 @@ ul {
 
 @media only screen and (max-width: 670px) {
   .menu-toggle {
-    visibility: hidden;
+    display: none;
   }
   .menu {
     display: block;
