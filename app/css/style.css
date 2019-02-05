@@ -50,9 +50,23 @@ ul {
   display: block;
   top: 0;
   right: 0;
-  margin: 5rem 10rem 0 0;
   width: 41.5rem;
+  margin: 5rem 10rem 0 0;
   background-color: #FFFFFF;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.menu--hidden {
+  margin: 5rem 5rem 0 0;
+  -webkit-transform: scale(0.05);
+  -ms-transform: scale(0.05);
+  transform: scale(0.05);
+  opacity: 0;
 }
 
 .menu-element {
@@ -150,6 +164,13 @@ ul {
     margin: 3rem 0;
     width: 100%;
     text-align: center;
+    opacity: 1;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
   }
 }
 
