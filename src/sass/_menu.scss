@@ -24,6 +24,8 @@
   font-family: $font-family;
   cursor: pointer;
 
+  transition: all .2s;
+
   &:hover {
     background-color: $light-carmine-pink-color;
     color: $white-color;

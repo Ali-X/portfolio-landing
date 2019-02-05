@@ -76,6 +76,9 @@ ul {
   font-size: 2rem;
   font-family: "Merriweather", serif;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 
 .menu-element:hover {
