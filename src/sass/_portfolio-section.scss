@@ -87,6 +87,34 @@
   transform: translateX(-50%);
 }
 
+.portfolio-tip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
 @media only screen and (max-width: 849px) {
   .portfolio-section {
     margin: 5rem 0;
