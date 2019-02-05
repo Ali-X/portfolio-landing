@@ -72,7 +72,6 @@ ul {
 .menu-element {
   display: block;
   margin: 0;
-  padding: 2rem 4rem;
   color: #131200;
   font-size: 2rem;
   font-family: "Merriweather", serif;
@@ -91,13 +90,15 @@ ul {
   transform: translateX(8px);
 }
 
-.menu-element--contact {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.menu-element--hovered {
+  background-color: #dc6a73;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .menu-link {
   display: block;
+  padding: 2rem 4rem;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -109,6 +110,11 @@ ul {
   -webkit-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+
+.menu-link--contact {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .menu-link:active {

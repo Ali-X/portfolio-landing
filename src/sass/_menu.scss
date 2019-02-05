@@ -19,7 +19,6 @@
 .menu-element {
   display: block;
   margin: 0;
-  padding: 2rem 4rem;
   color: $smoky-black-color;
   font-size: 2rem;
   font-family: $font-family;
@@ -35,17 +34,24 @@
     }
   }
 
-  &--contact {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  &--hovered {
+    background-color: $light-carmine-pink-color;
+    color: $white-color;
+    font-weight: bold;
   }
 }
 
 .menu-link {
   display: block;
+  padding: 2rem 4rem;
   transition-duration: 0.3s;
   transition-property: transform;
   transition-timing-function: ease-out;
+
+  &--contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   &:active {
     font-weight: bold;
