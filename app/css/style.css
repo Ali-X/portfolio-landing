@@ -168,7 +168,7 @@ ul {
   }
   .menu {
     display: block;
-    position: unset;
+    position: static;
     visibility: visible;
     margin: 3rem 0;
     width: 100%;
@@ -516,7 +516,7 @@ ul {
     width: 100%;
   }
   .experience-section-card-date {
-    position: unset;
+    position: static;
   }
 }
 
