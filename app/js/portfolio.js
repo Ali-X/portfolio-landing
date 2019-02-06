@@ -4,14 +4,14 @@ let screenshotsFE = [
     name: 'Bicycle Landing',
     tech: 'HTML5, SCSS, Gulp',
     date: 'Dec 2018',
-    link: 'https://github.com/Ali-X/bicycle-landing'
+    link: 'https://ali-x.github.io/bicycle-landing/src/'
   },
   {
     file: 'bouncy.JPG',
     name: 'Bouncy',
     tech: 'HTML5, SCSS, Gulp',
     date: 'Dec 2018',
-    link: 'https://github.com/Ali-X/bouncy'
+    link: 'https://ali-x.github.io/bouncy/build/'
   }
 ];
 
