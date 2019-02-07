@@ -1,27 +1,18 @@
 .experience-section-card {
-  display: flex;
   justify-content: center;
   margin: 5rem auto;
   width: 60%;
-  font-family: $font-family;
-  box-shadow: 0 0 4rem $smoky-black-transparent-shadow-color;
 }
 
 .experience-section-subcard {
   padding: 4rem;
 
   &--rose {
-    position: relative;
     width: 30%;
-    color: $white-color;
-    text-align: right;
-    background-color: $light-carmine-pink-color;
   }
 
   &--white {
     width: 70%;
-    color: $smoky-black-color;
-    background-color: $white-color;
   }
 }
 
@@ -33,14 +24,6 @@
 .experience-section-card-place {
   margin: 1rem 0;
   font-size: 2rem;
-}
-
-.experience-section-card-date {
-  position: absolute;
-  bottom: 4rem;
-  right: 4rem;
-  font-size: 1.5rem;
-  font-style: italic;
 }
 
 .experience-section-card-header {
@@ -62,9 +45,5 @@
 
   .experience-section-subcard--rose, .experience-section-subcard--white {
     width: 100%;
-  }
-
-  .experience-section-card-date {
-    position: static;
   }
 }

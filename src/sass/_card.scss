@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  font-family: "Merriweather", serif;
+  box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
+}
+
+.subcard {
+  &--rose {
+    position: relative;
+    color: $white-color;
+    text-align: right;
+    background-color: $light-carmine-pink-color;
+  }
+
+  &--white {
+    color: $smoky-black-color;
+    background-color: $white-color;
+  }
+}
+
+.card-date {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    flex-flow: column;
+    width: 90%;
+  }
+
+  .subcard--rose, .subcard--white {
+    width: 100%;
+  }
+
+  .card-date {
+    position: static;
+  }
+}

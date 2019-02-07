@@ -183,6 +183,53 @@ ul {
   }
 }
 
+.card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Merriweather", serif;
+  -webkit-box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
+  box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
+}
+
+.subcard--rose {
+  position: relative;
+  color: #FFFFFF;
+  text-align: right;
+  background-color: #dc6a73;
+}
+
+.subcard--white {
+  color: #131200;
+  background-color: #FFFFFF;
+}
+
+.card-date {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    width: 90%;
+  }
+  .subcard--rose, .subcard--white {
+    width: 100%;
+  }
+  .card-date {
+    position: static;
+  }
+}
+
 .color-block {
   width: 100%;
   padding: 10rem 0;
@@ -441,19 +488,12 @@ ul {
 }
 
 .experience-section-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin: 5rem auto;
   width: 60%;
-  font-family: "Merriweather", serif;
-  -webkit-box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
-  box-shadow: 0 0 4rem rgba(19, 18, 0, 0.15);
 }
 
 .experience-section-subcard {
@@ -461,17 +501,11 @@ ul {
 }
 
 .experience-section-subcard--rose {
-  position: relative;
   width: 30%;
-  color: #FFFFFF;
-  text-align: right;
-  background-color: #dc6a73;
 }
 
 .experience-section-subcard--white {
   width: 70%;
-  color: #131200;
-  background-color: #FFFFFF;
 }
 
 .experience-section-card-position {
@@ -482,14 +516,6 @@ ul {
 .experience-section-card-place {
   margin: 1rem 0;
   font-size: 2rem;
-}
-
-.experience-section-card-date {
-  position: absolute;
-  bottom: 4rem;
-  right: 4rem;
-  font-size: 1.5rem;
-  font-style: italic;
 }
 
 .experience-section-card-header {
@@ -514,9 +540,6 @@ ul {
   }
   .experience-section-subcard--rose, .experience-section-subcard--white {
     width: 100%;
-  }
-  .experience-section-card-date {
-    position: static;
   }
 }
 

@@ -16,7 +16,7 @@
     let parrentElem = document.getElementsByClassName('experience-section')[0];
 
     let cardElem = document.createElement('div');
-    cardElem.setAttribute('class', 'experience-section-card');
+    cardElem.setAttribute('class', 'experience-section-card card');
 
     let subcardRoseElem = createRoseBlock(exp);
     let subcardWhiteElem = createWhiteBlock(exp);
@@ -42,7 +42,7 @@
 
   function createRoseBlock(exp) {
     let subcardRoseElem = document.createElement('div');
-    subcardRoseElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--rose');
+    subcardRoseElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--rose subcard subcard--rose');
 
     let positionElem = document.createElement('div');
     positionElem.setAttribute('class', 'experience-section-card-position');
@@ -53,7 +53,7 @@
     placeElem.innerText = exp['place'];
 
     let dateElem = document.createElement('div');
-    dateElem.setAttribute('class', 'experience-section-card-date');
+    dateElem.setAttribute('class', 'card-date');
     dateElem.innerText = exp['date'];
 
     subcardRoseElem.appendChild(positionElem);
@@ -65,7 +65,7 @@
 
   function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
-    subcardWhiteElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--white');
+    subcardWhiteElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--white subcard subcard--white');
 
     let respElem = document.createElement('div');
     respElem.setAttribute('class', 'experience-section-card-header');
