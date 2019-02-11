@@ -286,6 +286,15 @@ ul {
   font-weight: bold;
 }
 
+.header__position {
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
 .header__description {
   padding: 1rem 0;
   color: #FFFFFF;
@@ -299,7 +308,10 @@ ul {
     padding: 0;
   }
   .header__name {
-    font-size: 3rem;
+    font-size: 2.7rem;
+    text-align: center;
+  }
+  .header__position {
     text-align: center;
   }
   .header__content {
