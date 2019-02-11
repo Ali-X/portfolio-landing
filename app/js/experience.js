@@ -16,7 +16,7 @@
     let parrentElem = document.getElementsByClassName('experience-section')[0];
 
     let cardElem = document.createElement('div');
-    cardElem.setAttribute('class', 'experience-section-card card');
+    cardElem.setAttribute('class', 'experience-section__card card');
 
     let subcardRoseElem = createRoseBlock(exp);
     let subcardWhiteElem = createWhiteBlock(exp);
@@ -32,7 +32,7 @@
 
     for (let j = 0; j < arr.length; j++) {
       let liElem = document.createElement('li');
-      liElem.setAttribute('class', 'experience-section-card-item');
+      liElem.setAttribute('class', 'experience-section__item');
       liElem.innerText = arr[j];
 
       ulElem.appendChild(liElem);
@@ -42,18 +42,18 @@
 
   function createRoseBlock(exp) {
     let subcardRoseElem = document.createElement('div');
-    subcardRoseElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--rose subcard subcard--rose');
+    subcardRoseElem.setAttribute('class', 'experience-section__subcard experience-section__subcard--rose subcard subcard--rose');
 
     let positionElem = document.createElement('div');
-    positionElem.setAttribute('class', 'experience-section-card-position');
+    positionElem.setAttribute('class', 'experience-section__position');
     positionElem.innerText = exp['position'];
 
     let placeElem = document.createElement('div');
-    placeElem.setAttribute('class', 'experience-section-card-place');
+    placeElem.setAttribute('class', 'experience-section__place');
     placeElem.innerText = exp['place'];
 
     let dateElem = document.createElement('div');
-    dateElem.setAttribute('class', 'card-date');
+    dateElem.setAttribute('class', 'card__date');
     dateElem.innerText = exp['date'];
 
     subcardRoseElem.appendChild(positionElem);
@@ -65,22 +65,22 @@
 
   function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
-    subcardWhiteElem.setAttribute('class', 'experience-section-subcard experience-section-subcard--white subcard subcard--white');
+    subcardWhiteElem.setAttribute('class', 'experience-section__subcard experience-section__subcard--white subcard subcard--white');
 
     let respElem = document.createElement('div');
-    respElem.setAttribute('class', 'experience-section-card-header');
+    respElem.setAttribute('class', 'experience-section__header');
     respElem.innerText = 'Responsibilities';
 
     let respUlElem = createList(exp['responsibilities']);
 
     let techElem = document.createElement('div');
-    techElem.setAttribute('class', 'experience-section-card-header');
+    techElem.setAttribute('class', 'experience-section__header');
     techElem.innerText = 'Technology stack';
 
     let techUlElem = createList(exp['tech']);
 
     let achElem = document.createElement('div');
-    achElem.setAttribute('class', 'experience-section-card-header');
+    achElem.setAttribute('class', 'experience-section__header');
     achElem.innerText = 'Achievements';
 
     let achUlElem = createList(exp['achievements']);

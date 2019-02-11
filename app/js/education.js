@@ -25,10 +25,10 @@
   for (let i = 0; i < educationArr.length; i++) {
     let exp = educationArr[i];
 
-    let parrentElem = document.getElementsByClassName('education-subsection')[0];
+    let parrentElem = document.getElementsByClassName('education-section__subsection')[0];
 
     let cardElem = document.createElement('div');
-    cardElem.setAttribute('class', 'education-section-card card');
+    cardElem.setAttribute('class', 'education-section__card card');
 
     let subcardRoseElem = createRoseBlock(exp);
     let subcardWhiteElem = createWhiteBlock(exp);
@@ -41,10 +41,10 @@
 
   function createRoseBlock(exp) {
     let subcardRoseElem = document.createElement('div');
-    subcardRoseElem.setAttribute('class', 'education-section-subcard education-section-subcard--rose subcard subcard--rose');
+    subcardRoseElem.setAttribute('class', 'education-section__subcard subcard subcard--rose');
 
     let typeElem = document.createElement('div');
-    typeElem.setAttribute('class', 'education-section-card-type');
+    typeElem.setAttribute('class', 'education-section__type');
     typeElem.innerText = exp['type'];
 
     subcardRoseElem.appendChild(typeElem);
@@ -54,14 +54,14 @@
 
   function createWhiteBlock(exp) {
     let subcardWhiteElem = document.createElement('div');
-    subcardWhiteElem.setAttribute('class', 'education-section-subcard education-section-subcard--white subcard subcard--white');
+    subcardWhiteElem.setAttribute('class', 'education-section__subcard subcard subcard--white');
 
     let placeElem = document.createElement('div');
-    placeElem.setAttribute('class', 'education-section-card-place');
+    placeElem.setAttribute('class', 'education-section__place');
     placeElem.innerText = exp['place'];
 
     let dateElem = document.createElement('div');
-    dateElem.setAttribute('class', 'card-date');
+    dateElem.setAttribute('class', 'card__date');
     dateElem.innerText = exp['date'];
 
     subcardWhiteElem.appendChild(placeElem);

@@ -1,49 +1,40 @@
 .education-section {
   padding: 0 25rem;
-}
 
-.education-subsection {
-  padding: 5rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.education-section-card {
-  position: relative;
-  margin: 2rem;
-  width: 30rem;
-  flex-flow: column;
-  justify-content: flex-start;
-}
-
-.education-section-subcard {
-  padding: 2rem;
-  width: 100%;
-  //height: 50%;
-
-  &--rose {
-    height: 40%;
+  &__subsection {
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  &--white {
-    height: 60%;
+  &__card {
+    position: relative;
+    margin: 2rem;
+    width: 30rem;
+    flex-flow: column;
+    justify-content: flex-start;
   }
-}
 
-.education-section-card-type {
-  font-size: 1.6rem;
-  font-weight: bold;
-  padding-left: 25%;
-}
+  &__subcard {
+    padding: 2rem;
+    width: 100%;
+  }
 
-.education-section-card-place {
-  font-size: 1.5rem;
-  padding-bottom: 8rem;
+  &__type {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-left: 25%;
+  }
+
+  &__place {
+    font-size: 1.5rem;
+    padding-bottom: 7rem;
+  }
 }
 
 @media only screen and (max-width: 1290px) {
-  .education-section-card {
+  .education-section__card {
     width: 30rem;
   }
 }
@@ -53,7 +44,7 @@
     padding: 4rem 0;
   }
 
-  .education-section-card-place {
+  .education-section__place {
     padding-bottom: 3rem;
   }
 }

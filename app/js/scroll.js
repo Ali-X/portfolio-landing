@@ -3,9 +3,9 @@
 
   window.onscroll = function() {
     if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset) {
-      document.getElementById("scroll-to-top").style.opacity = "1";
+      document.getElementsByClassName("scroll-to-top")[0].style.opacity = "1";
     } else {
-      document.getElementById("scroll-to-top").style.opacity = "0";
+      document.getElementsByClassName("scroll-to-top")[0].style.opacity = "0";
     }
   }
 })();

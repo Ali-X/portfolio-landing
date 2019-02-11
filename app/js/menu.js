@@ -3,14 +3,14 @@
     let target = event.target;
 
     while (target.id !== 'menu') {
-      if (target.classList.contains('menu-element')) {
-        let items = document.getElementsByClassName('menu-element');
+      if (target.classList.contains('menu__element')) {
+        let items = document.getElementsByClassName('menu__element');
 
         for (let i = 0; i < items.length; i++) {
-          items[i].classList.remove('menu-element--hovered');
+          items[i].classList.remove('menu__element--hovered');
         }
 
-        target.classList.add('menu-element--hovered');
+        target.classList.add('menu__element--hovered');
         break;
       }
 

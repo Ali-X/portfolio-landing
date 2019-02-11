@@ -1,9 +1,9 @@
 .footer {
   height: 5rem;
   text-align: center;
-}
 
-.footer-copyright {
-  font-family: $font-family;
-  color: $smoky-black-transparent-color;
+  &__copyright {
+    font-family: $font-family;
+    color: $smoky-black-transparent-color;
+  }
 }

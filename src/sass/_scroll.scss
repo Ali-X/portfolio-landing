@@ -1,4 +1,4 @@
-#scroll-to-top {
+.scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -9,23 +9,23 @@
   text-decoration: none;
   border-radius: 35px;
   transition: all .5s ease;
-}
 
-#scroll-to-top i {
-  color: $white-color;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  transition: all .3s ease;
-}
+  &:hover {
+    background: $smoky-black-transparent-color;
 
-#scroll-to-top:hover {
-  background: $smoky-black-transparent-color;
-}
+    .scroll-to-top__icon {
+      color: $white-color;
+      top: 5px;
+    }
+  }
 
-#scroll-to-top:hover i {
-  color: $white-color;
-  top: 5px;
+  &__icon {
+    color: $white-color;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all .3s ease;
+  }
 }
