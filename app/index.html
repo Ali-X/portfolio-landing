@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="header">
+<header class="header">
   <div class="color-block color-block--light-rose">
     <div class="header__content">
       <div class="header__photo"></div>
@@ -25,93 +25,94 @@
       </div>
     </div>
   </div>
-  <div class="menu menu--hidden" id="menu">
-    <nav>
-      <ul>
-        <li class="menu__element"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__element"><a class="menu__link" href="#portfolio-section">Portfolio</a></li>
-        <li class="menu__element"><a class="menu__link" href="#experience-section">Experience</a></li>
-        <li class="menu__element"><a class="menu__link" href="#tech-section">Technical Knowledge</a></li>
-        <li class="menu__element"><a class="menu__link" href="#education-section">Education</a></li>
-        <li class="menu__element"><a class="menu__link menu__link--contact" href="#contact-section">Contact me</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="menu menu--hidden" id="menu">
+    <menu>
+      <li class="menu__element"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__element"><a class="menu__link" href="#portfolio-section">Portfolio</a></li>
+      <li class="menu__element"><a class="menu__link" href="#experience-section">Experience</a></li>
+      <li class="menu__element"><a class="menu__link" href="#tech-section">Technical Knowledge</a></li>
+      <li class="menu__element"><a class="menu__link" href="#education-section">Education</a></li>
+      <li class="menu__element"><a class="menu__link menu__link--contact" href="#contact-section">Contact me</a></li>
+    </menu>
+  </nav>
   <div class="menu__toggle" onclick="toggleClick(this)">
     <div class="menu__toggle-line1"></div>
     <div class="menu__toggle-line2"></div>
     <div class="menu__toggle-line3"></div>
   </div>
-</div>
+</header>
 
-<div class="portfolio-section" id="portfolio-section">
-  <h2 class="title">Portfolio</h2>
-  <h3 class="portfolio-section__header">Front-End Development</h3>
-  <div class="portfolio portfolio--fe"></div>
-  <h3 class="portfolio-section__header">Java Development</h3>
-  <div class="portfolio portfolio--be"></div>
-</div>
+<main>
+  <section class="portfolio-section" id="portfolio-section">
+    <h2 class="title">Portfolio</h2>
+    <h3 class="portfolio-section__header">Front-End Development</h3>
+    <div class="portfolio portfolio--fe"></div>
+    <h3 class="portfolio-section__header">Java Development</h3>
+    <div class="portfolio portfolio--be"></div>
+  </section>
 
-<div class="experience-section" id="experience-section">
-  <h2 class="title">Experience</h2>
-</div>
+  <section class="experience-section" id="experience-section">
+    <h2 class="title">Experience</h2>
+  </section>
 
-<div class="tech-section" id="tech-section">
-  <div class="color-block color-block--light-rose color-block--left">
-    <div class="tech-section__content">
-      <h2 class="tech-section__title title title--white">Technical Knowledge</h2>
-      <ul class="tech-section__items">
-        <li class="tech-section__item">Java Development: Java, Servlets, JSP, JSTL, Spring (Spring Core, Spring MVC,
-          Spring Boot, Spring Data, Spring Mongodb), JSoup, Hibernate, Maven, JUnit, HtmlUnit, Thymeleaf
-        </li>
-        <li class="tech-section__item">Web Development: HTML5, CSS3, Sass (SCSS), Pug</li>
-        <li class="tech-section__item">JavaScript basics, jQuery</li>
-        <li class="tech-section__item">AJAX, JSON understanding</li>
-        <li class="tech-section__item">DBMS: MongoDB, H2, SQLite, PostgreSQL</li>
-        <li class="tech-section__item">VCS: Git, SVN</li>
-        <li class="tech-section__item">Gulp, Webpack</li>
-        <li class="tech-section__item">Bootstrap</li>
-        <li class="tech-section__item">Kibana, Graylog, Jenkins</li>
-        <li class="tech-section__item">Methodologies: BEM</li>
-        <li class="tech-section__item">SVG, Canvas</li>
-        <li class="tech-section__item">Operating systems: Linux, Windows</li>
-        <li class="tech-section__item">Version Control Tools: Git, SVN</li>
-        <li class="tech-section__item">Postman, Insomnia</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="education-section" id="education-section">
-  <h2 class="title">Education</h2>
-  <div class="education-section__subsection"></div>
-</div>
-
-<div class="contact-section" id="contact-section">
-  <div class="contact-section__inner color-block color-block--light-rose color-block--left">
-    <div class="contact-section__subsection contact-subsection--left">
-      <div class="contact-section__title">Feel Like Talking</div>
-      <div class="contact-section__phone"><a href="tel:+380509949379">+38 050 99 49 379</a></div>
-    </div>
-    <div class="contact-section__subsection">
-      <div class="contact-section__title">Contact me</div>
-      <div class="contact-section__socials">
-        <a href="https://github.com/Ali-X" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/alina-neshchebnaya-7719a7146/" target="_blank"><i
-                class="fa fa-linkedin-square"></i></a>
-        <a href="skype:Alisse_Rose?chat" target="_blank"><i class="fa fa-skype"></i></a>
-        <a href="https://www.facebook.com/alina.neshchebnaya" target="_blank"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://t.me/GetOuttaYourMind" target="_blank"><i class="fa fa-telegram"></i></a>
-        <a href="viber://chat?number=+380509949379" target="_blank"><i class="fa fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/neshchebnaya/" target="_blank"><i class="fa fa-instagram"></i></a>
+  <section class="tech-section" id="tech-section">
+    <div class="color-block color-block--light-rose color-block--left">
+      <div class="tech-section__content">
+        <h2 class="tech-section__title title title--white">Technical Knowledge</h2>
+        <ul class="tech-section__items">
+          <li class="tech-section__item">Java Development: Java, Servlets, JSP, JSTL, Spring (Spring Core, Spring MVC,
+            Spring Boot, Spring Data, Spring Mongodb), JSoup, Hibernate, Maven, JUnit, HtmlUnit, Thymeleaf
+          </li>
+          <li class="tech-section__item">Web Development: HTML5, CSS3, Sass (SCSS), Pug</li>
+          <li class="tech-section__item">JavaScript basics, jQuery</li>
+          <li class="tech-section__item">AJAX, JSON understanding</li>
+          <li class="tech-section__item">DBMS: MongoDB, H2, SQLite, PostgreSQL</li>
+          <li class="tech-section__item">VCS: Git, SVN</li>
+          <li class="tech-section__item">Gulp, Webpack</li>
+          <li class="tech-section__item">Bootstrap</li>
+          <li class="tech-section__item">Kibana, Graylog, Jenkins</li>
+          <li class="tech-section__item">Methodologies: BEM</li>
+          <li class="tech-section__item">SVG, Canvas</li>
+          <li class="tech-section__item">Operating systems: Linux, Windows</li>
+          <li class="tech-section__item">Version Control Tools: Git, SVN</li>
+          <li class="tech-section__item">Postman, Insomnia</li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="footer">
+  <section class="education-section" id="education-section">
+    <h2 class="title">Education</h2>
+    <div class="education-section__subsection"></div>
+  </section>
+
+  <section class="contact-section" id="contact-section">
+    <div class="contact-section__inner color-block color-block--light-rose color-block--left">
+      <div class="contact-section__subsection contact-subsection--left">
+        <div class="contact-section__title">Feel Like Talking</div>
+        <div class="contact-section__phone"><a href="tel:+380509949379">+38 050 99 49 379</a></div>
+      </div>
+      <div class="contact-section__subsection">
+        <div class="contact-section__title">Contact me</div>
+        <div class="contact-section__socials">
+          <a href="https://github.com/Ali-X" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alina-neshchebnaya-7719a7146/" target="_blank"><i
+                  class="fa fa-linkedin-square"></i></a>
+          <a href="skype:Alisse_Rose?chat" target="_blank"><i class="fa fa-skype"></i></a>
+          <a href="https://www.facebook.com/alina.neshchebnaya" target="_blank"><i
+                  class="fa fa-facebook-square"></i></a>
+          <a href="https://t.me/GetOuttaYourMind" target="_blank"><i class="fa fa-telegram"></i></a>
+          <a href="viber://chat?number=+380509949379" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/neshchebnaya/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
   <span class="footer__copyright">Copyright &copy; 2019 Alina Neshchebnaya</span>
-</div>
+</footer>
 
 <script src="./js/scroll.js"></script>
 <script src="./js/menu-toggle.js"></script>
