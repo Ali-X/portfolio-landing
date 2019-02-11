@@ -1,5 +1,5 @@
 ;(function() {
-  document.getElementById('menu').onclick = function(event) {
+  document.getElementById('menu').addEventListener('click', event => {
     let target = event.target;
 
     while (target.id !== 'menu') {
@@ -16,5 +16,5 @@
 
       target = target.parentNode;
     }
-  };
+  })
 })();
