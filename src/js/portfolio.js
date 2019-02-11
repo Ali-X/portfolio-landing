@@ -46,15 +46,15 @@ let screenshotsBE = [
   }
 ];
 
-getscreenshotsFE();
-getscreenshotsBE();
+getScreenshotsFE();
+getScreenshotsBE();
 
-function getscreenshotsFE() {
+function getScreenshotsFE() {
   let portfolioElem = document.getElementsByClassName("portfolio--fe")[0];
   createPortfolioItem(portfolioElem, screenshotsFE);
 }
 
-function getscreenshotsBE() {
+function getScreenshotsBE() {
   let portfolioElem = document.getElementsByClassName("portfolio--be")[0];
   createPortfolioItem(portfolioElem, screenshotsBE);
 }
